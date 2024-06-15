@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="header">
+    </section>
+
+    <section id="prodetails" class="section-p1">
+        <div class="single-pro-image">
+            <img src="" width="100%" id="mainImg" alt="" class="img">
+
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="" width="100%" class="small-img img1" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="" width="100%" class="small-img img2" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="" width="100%" class="small-img img3" alt="">
+                </div>
+                <div class="small-img-col">
+                    <img src="" width="100%" class="small-img img4" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="single-product-details">
+            <h6></h6>
+            <h4></h4>
+            <h2></h2>
+            <select>
+                <option>Select Size</option>
+                <option>XL</option>
+                <option>XXL</option>
+                <option>Small</option>
+                <option>Large</option>
+            </select>
+
+            <!-- <input type="number" value="1"> -->
+            <button class="normal cart">Add To Cart</button>
+            <h4></h4>
+            <span class="desc">
+            </span>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Similar Products</h2>
+        <p>Summer Collection New Morden Design</p>
+        <div class="listProduct"></div>
+
+
+        </div>
+    </section>
+
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign Up For Newsletters</h4>
+            <p>Get E-mail update about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+        </div>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <h4>Contact</h4>
+            <p><strong>Address:</strong>652 Saipalaki Road, Street 32,Shirdi</p>
+            <p><strong>Phone:</strong>(+91) 92 3848 4848/ (+91) 98 8765 7865</p>
+            <p><strong>Hours:</strong>10:00 - 18:00, Mon - Sat</p>
+            <div class="follow">
+                <h4>Follow Us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="about.html">About Us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign <Input:date></Input:date></a>
+            <a href="#">Delivery Information</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help</a>
+        </div>
+
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App Store or Google Play</p>
+            <div class="row">
+                <img src="images/pay/app.jpg" alt="">
+                <img src="images/pay/play.jpg" alt="">
+            </div>
+            <p>Secure Payment Gateways</p>
+            <img src="images/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> &#169; 204. Raksha Ecommerce</p>
+        </div>
+    </footer>
+    
+    <script src="js/script1.js" type="module"></script>
+    <script src="js/cart.js" type="module"></script>
+    <script src="js/sproduct.js" type="module"></script>
+    <script>
+        let mainImg=document.getElementById('mainImg');
+        let smallimg=document.getElementsByClassName('small-img');
+
+        smallimg[0].onclick= function(){
+            mainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick= function(){
+            mainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick= function(){
+            mainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick= function(){
+            mainImg.src = smallimg[3].src;
+        }
+
+    </script>
+</body>
+</html>
